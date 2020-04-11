@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Arial MT";
+  src:
+    url('../fonts/arialmt.woff') format('woff'),
+    url('../fonts/arialmt.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: Georgia;
+  src:
+    url('../fonts/Georgia.woff') format('woff'),
+    url('..fonts/Georgia.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
