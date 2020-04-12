@@ -2,17 +2,12 @@ $(document).ready(function () {
   let modal = $(".modal"); //помещаем модальное окно
   let modal2 = $(".modalFoto"); //помещаем модальное окно
 
-
-
   modalBtn = $("[data-toggle = modal]"); //
   modalBtnFoto = $("[data-toggle = modalFoto]"); //
-
 
   closeBtn = $(".modal__close"); //
   closeBtnFoto = $(".modalFoto__close"); //
   closeBtnSend = $(".modalSend__close"); //
-
-
 
   modalBtn.on("click", function () {
     //присваееваем класс
@@ -36,7 +31,7 @@ $(document).ready(function () {
     }
   });
 
-  //открытие модального окна Фото 
+  //открытие модального окна Фото
   modalBtnFoto.on("click", function () {
     //присваееваем класс
     modal2.toggleClass("modalFoto--visible");
@@ -60,10 +55,6 @@ $(document).ready(function () {
   });
   ///закрытие модалтного окна Фото
 
-
-
-
-
   //открытие модального окна ПОДПИСКИ
   $(".modalSend-btn").on("click", function (event) {
     event.preventDefault();
@@ -84,20 +75,17 @@ $(document).ready(function () {
     modal3.toggleClass("modalSend--visible");
   });
 
-
-
-  //Слайдер 
-  var swiper = new Swiper('.slider-gallery', {
+  //Слайдер
+  var swiper = new Swiper(".slider-gallery", {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
     navigation: {
-      nextEl: '.slider-gallery__next',
-      prevEl: '.slider-gallery__prev',
+      nextEl: ".slider-gallery__next",
+      prevEl: ".slider-gallery__prev",
     },
-    mousewheel: true,
     keyboard: true,
   });
 
@@ -109,21 +97,21 @@ $(document).ready(function () {
       userName: {
         required: true,
         minlength: 2,
-        maxlength: 30
+        maxlength: 30,
       },
       userMessage: {
         required: true,
         minlength: 10,
-        maxlength: 50
+        maxlength: 50,
       },
       // правило- обьект
       userEmail: {
         required: true,
-        email: true
+        email: true,
       },
       userPhone: {
         required: !0,
-        minlength: 16
+        minlength: 16,
       },
     },
     //сообщения
@@ -131,22 +119,22 @@ $(document).ready(function () {
       userName: {
         required: "Имя обязательно",
         minlength: "Имя не короче 2 символов",
-        maxlength: "Имя не длиньше 15 символов"
+        maxlength: "Имя не длиньше 15 символов",
       },
 
       userPhone: {
         required: "Телефон обязателен",
-        minlength: "Некорректно введен номер"
+        minlength: "Некорректно введен номер",
       },
       userEmail: {
         required: "Обязательно укажите email",
-        email: "Введите в формате: ivanov@gmail.com"
+        email: "Введите в формате: ivanov@gmail.com",
       },
       userMessage: {
         required: "Сообщение обязателено",
         minlength: "Сообщение не короче 10 символов",
-        maxlength: "Сообщение не длиньше 30 символов"
-      }
+        maxlength: "Сообщение не длиньше 30 символов",
+      },
     },
     //отправка формы через аякс
     submitHandler: function (form) {
@@ -160,9 +148,9 @@ $(document).ready(function () {
           modal.removeClass("modal--visible");
           $(".modal").fadeOut();
           $(".modalSend").fadeIn();
-        }
+        },
       });
-    }
+    },
   });
 
   $(".modal__form").validate({
@@ -172,11 +160,11 @@ $(document).ready(function () {
       userName: {
         required: true,
         minlength: 2,
-        maxlength: 30
+        maxlength: 30,
       },
       userPhone: {
         required: !0,
-        minlength: 16
+        minlength: 16,
       },
     },
     //сообщения
@@ -184,12 +172,12 @@ $(document).ready(function () {
       userName: {
         required: "Имя обязательно",
         minlength: "Имя не короче 2 символов",
-        maxlength: "Имя не длиньше 15 символов"
+        maxlength: "Имя не длиньше 15 символов",
       },
       userPhone: {
         required: "Телефон обязателен",
-        minlength: "Некорректно введен номер"
-      }
+        minlength: "Некорректно введен номер",
+      },
     },
     //отправка формы через аякс
     submitHandler: function (form) {
@@ -200,14 +188,14 @@ $(document).ready(function () {
         success: function (response) {
           $(form)[0].reset(); // чистит поля после отправки формы
           $(".modalSend").fadeIn();
-        }
+        },
       });
-    }
+    },
   });
 
   //маска для номера телефона
   $("[type=tel]").mask("+7(000)000-00-00", {
-    placeholder: "Ваш номер телефона:"
+    placeholder: "Ваш номер телефона:",
   });
 
   new WOW().init();
