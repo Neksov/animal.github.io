@@ -87,18 +87,18 @@ $(document).ready(function () {
 
 
   //Слайдер 
-  var swiper = new Swiper('.swiper-container', {
+  var swiper = new Swiper('.slider-gallery', {
     slidesPerView: 3,
     spaceBetween: 30,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
-    prevArrow: $('.prev'),
-    nextArrow: $('.next'),
     navigation: {
-      nextEl: '.next',
-      prevEl: '.prev',
+      nextEl: '.slider-gallery__next',
+      prevEl: '.slider-gallery__prev',
     },
+    mousewheel: true,
+    keyboard: true,
   });
 
   //валидация форм
