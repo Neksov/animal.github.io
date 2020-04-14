@@ -9,8 +9,20 @@
   justify-content: space-between
   align-items: center
   padding-top: 60px
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: red
+    z-index: -2
+    
 .logo
   display: grid
+  position: relative
+  z-index: 3
   &__title
     color: #f1cdb3
     font-family: 'Georgia'
@@ -76,4 +88,6 @@
   &__btn
     &:hover
       background-color: #fddcc4
+.burger
+  display: none
 

@@ -9,10 +9,20 @@
 }
 
 @font-face {
-  font-family: Georgia;
+  font-family: "Georgia";
   src:
     url('../fonts/Georgia.woff') format('woff'),
-    url('..fonts/Georgia.woff2') format('woff');
+    url('../fonts/Georgia.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: wrap;
+}
+
+@font-face {
+  font-family: "Times New Roman PSMT";
+  src:
+    url('../fonts/timesnewromanpsmtbigfontsitecom.woff') format('woff'),
+    url('../fonts/timesnewromanpsmtbigfontsitecom.wof2') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: wrap;

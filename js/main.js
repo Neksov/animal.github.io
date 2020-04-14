@@ -78,7 +78,7 @@ $(document).ready(function () {
   //Слайдер
   var swiper = new Swiper(".slider-gallery", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 50,
     slidesPerGroup: 3,
     loop: true,
     loopFillGroupWithBlank: true,
@@ -87,6 +87,20 @@ $(document).ready(function () {
       prevEl: ".slider-gallery__prev",
     },
     keyboard: true,
+    breakpoints: {
+      799: {
+        slidesPerView: 3,
+        slidesPerGroup: 3,
+      },
+      550: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+      },
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      }
+    }
   });
 
   //валидация форм
@@ -208,3 +222,8 @@ $(document).ready(function () {
     img.removeAttribute("data-src");
   };
 });
+$(document).ready(function () {
+  $('.burger').click(function (event) {
+    $('.burger, .nav').toggleClass('active');
+  })
+})

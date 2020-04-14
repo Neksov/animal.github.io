@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/swiper.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animate.min.css" media="all" />
+    <link rel="stylesheet" href="css/animate.css" media="all" />
     <title>Домашние питомцы</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -24,14 +24,21 @@
                 data-wow-delay="0.4s"
                 >Cozy House</a
               >
-              <span class="logo__text">Shelter for pets in Boston </span>
+              <span class="logo__text wow fadeInLeft" data-wow-delay="0.4s"
+                >Shelter for pets in Boston
+              </span>
+            </div>
+            <div class="burger">
+              <span></span>
             </div>
             <nav class="nav menu__nav">
               <ul>
-                <li><a href="#hero" class="nav__item">About the shelter</a></li>
-                <li><a href="#video" class="nav__item">Our pets</a></li>
                 <li>
-                  <a href="#price" class="nav__item">To help the shelter</a>
+                  <a href="#about" class="nav__item">About the shelter</a>
+                </li>
+                <li><a href="#animal" class="nav__item">Our pets</a></li>
+                <li>
+                  <a href="#help" class="nav__item">To help the shelter</a>
                 </li>
                 <li><a href="#footer" class="nav__item">Contacts</a></li>
               </ul>
@@ -39,7 +46,7 @@
             <!-- /.menu nav__menu -->
           </div>
 
-          <div class="hero">
+          <div class="hero wow fadeInLeft" data-wow-delay="0.4s">
             <div class="hero__title">Not only people need a house</div>
             <div class="hero__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
@@ -51,7 +58,7 @@
         </div>
       </div>
     </section>
-    <sectiom class="about">
+    <sectiom class="about" id="about">
       <div class="container">
         <div class="pets">
           <img src="img/Pets.jpg" alt="Pets" />
@@ -73,7 +80,7 @@
         </div>
       </div>
     </sectiom>
-    <section class="animal">
+    <section class="animal" id="animal">
       <div class="container2">
         <div class="animals">
           <div class="animals__title">
@@ -138,29 +145,29 @@
                 </div>
               </div>
             </div>
-            <!-- Add Arrows -->
-            <div
-              class="swiper-button-next slider-gallery__next"
-              tabindex="0"
-              role="button"
-              aria-label="Next slide"
-              aria-disabled="false"
-            ></div>
-            <div
-              class="swiper-button-prev slider-gallery__prev"
-              tabindex="0"
-              role="button"
-              aria-label="Previous slide"
-              aria-disabled="false"
-            ></div>
           </div>
+          <!-- Add Arrows -->
+          <div
+            class="swiper-button-next slider-gallery__next"
+            tabindex="0"
+            role="button"
+            aria-label="Next slide"
+            aria-disabled="false"
+          ></div>
+          <div
+            class="swiper-button-prev slider-gallery__prev"
+            tabindex="0"
+            role="button"
+            aria-label="Previous slide"
+            aria-disabled="false"
+          ></div>
           <button class="btn animals__btn btn--primary">
             Get to know the rest
           </button>
         </div>
       </div>
     </section>
-    <section class="help">
+    <section class="help" id="help">
       <div class="container3">
         <div class="helps">
           <div class="helps__title">Than you can help our shelter</div>
@@ -231,6 +238,43 @@
         </div>
       </div>
     </section>
+    <section class="footer" id="footer">
+      <div class="container">
+        <div class="footers">
+          <div class="contact">
+            <div class="contact__title">
+              For questions and suggestions
+            </div>
+            <div class="contact__email">
+              <img src="img/email.png" alt="email" />
+              email@shelter.com
+            </div>
+            <div class="contact__phone">
+              <img src="img/telephone.png" alt="telephone" />
+              +13 674 567 75 54
+            </div>
+          </div>
+          <div class="address">
+            <div class="address__title">
+              We are waiting for your visit
+            </div>
+            <div class="address__street1">
+              <img src="img/pin.png" alt="pin" />
+              Boston, Central Street, 1st (Entrance from the store)
+            </div>
+            <div class="address__street2">
+              <img src="img/pin.png" alt="pin" />
+              London, South Park, 18st
+            </div>
+          </div>
+          <img src="img/Dog5.png" alt="dog" />
+        </div>
+      </div>
+    </section>
+    <p id="button-up">
+      <img data-src="img/angle-double-up-solid.svg " src="a" alt="Наверх" />
+      UP
+    </p>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
@@ -238,5 +282,6 @@
     <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
     <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
     <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+    <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/buttonUp.min.js"></script>
   </body>
 </html>
