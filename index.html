@@ -1,287 +1,296 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="css/swiper.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/animate.css" media="all" />
-    <title>Домашние питомцы</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-  </head>
 
-  <body>
-    <section class="start">
-      <div class="start__fon">
-        <div class="container">
-          <div class="menu">
-            <div class="logo">
-              <a
-                href="index.html"
-                class="logo__title wow fadeInLeft"
-                data-wow-delay="0.4s"
-                >Cozy House</a
-              >
-              <span class="logo__text wow fadeInLeft" data-wow-delay="0.4s"
-                >Shelter for pets in Boston
-              </span>
-            </div>
-            <div class="burger">
-              <span></span>
-            </div>
-            <nav class="nav menu__nav">
-              <ul>
-                <li>
-                  <a href="#about" class="nav__item">About the shelter</a>
-                </li>
-                <li><a href="#animal" class="nav__item">Our pets</a></li>
-                <li>
-                  <a href="#help" class="nav__item">To help the shelter</a>
-                </li>
-                <li><a href="#footer" class="nav__item">Contacts</a></li>
-              </ul>
-            </nav>
-            <!-- /.menu nav__menu -->
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/swiper.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animate.css" media="all" />
+  <title>Домашние питомцы</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+</head>
 
-          <div class="hero wow fadeInLeft" data-wow-delay="0.4s">
-            <div class="hero__title">Not only people need a house</div>
-            <div class="hero__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              gravida est in porttitor porttitor. Duis sodales elementum ipsum,
-              vehicula condimentum erat fringilla et.
-            </div>
-            <button class="btn hero__btn btn--primary">Make a friend</button>
-          </div>
-        </div>
-      </div>
-    </section>
-    <sectiom class="about" id="about">
+<body>
+  <section class="start">
+    <div class="start__fon">
       <div class="container">
-        <div class="pets">
-          <img src="img/Pets.jpg" alt="Pets" />
-          <div class="house">
-            <h3 class="house__title">About the shelter “Cozy House”</h3>
-            <span class="house__text"
-              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-              efficitur blandit condimentum. Proin accumsan lorem vel gravida
-              fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.<br />
-              <br />
-              Donec consectetur, diam in porta tempus, urna ligula vestibulum
-              nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
-              ultrices pharetra. Morbi tempus at ante sit amet tristique.
-              Maecenas dignissim justo orci, in laoreet urna dapibus nec.
-              Praesent quis tortor faucibus, tristique ante vitae, dignissim
-              lorem. Sed at ligula et sem mattis gravida ac vel erat.
+        <div class="menu">
+          <div class="logo">
+            <a href="index.html" class="logo__title wow fadeInLeft" data-wow-delay="0.4s">Cozy House</a>
+            <span class="logo__text wow fadeInLeft" data-wow-delay="0.4s">Shelter for pets in Boston
             </span>
           </div>
+          <div class="burger">
+            <span></span>
+          </div>
+          <nav class="nav menu__nav">
+            <ul>
+              <li>
+                <a href="#about" class="nav__item">About the shelter</a>
+              </li>
+              <li><a href="ourpets.html" class="nav__item">Our pets</a></li>
+              <li>
+                <a href="#help" class="nav__item">To help the shelter</a>
+              </li>
+              <li><a href="#footer" class="nav__item">Contacts</a></li>
+            </ul>
+          </nav>
+          <!-- /.menu nav__menu -->
+        </div>
+
+        <div class="hero wow fadeInLeft" data-wow-delay="0.4s">
+          <div class="hero__title">Not only people need a house</div>
+          <div class="hero__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            gravida est in porttitor porttitor. Duis sodales elementum ipsum,
+            vehicula condimentum erat fringilla et.
+          </div>
+          <button class="btn hero__btn btn--primary" data-toggle="modal">Make a friend</button>
         </div>
       </div>
-    </sectiom>
-    <section class="animal" id="animal">
-      <div class="container2">
-        <div class="animals">
-          <div class="animals__title">
-            Our friends who<br />
-            are looking for a house
-          </div>
-          <!-- Swiper -->
-          <div class="swiper-container slider-gallery">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="img/Cat.jpg" alt="Cat" />
-                    <h5 class="card-title">Katrine</h5>
-                    <button class="btn card__btn btn--light">Learn More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="img/Dog2.jpg" alt="Dog" />
-                    <h5 class="card-title">Jennifer</h5>
-                    <button class="btn card__btn btn--light">Learn More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="img/Dog.jpg" alt="Dog" />
-                    <h5 class="card-title">Woody</h5>
-                    <button class="btn card__btn btn--light">Learn More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="img/Cat.jpg" alt="Cat" />
-                    <h5 class="card-title">Katrine</h5>
-                    <button class="btn card__btn btn--light">Learn More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="img/Dog2.jpg" alt="Dog" />
-                    <h5 class="card-title">Jennifer</h5>
-                    <button class="btn card__btn btn--light">Learn More</button>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="card">
-                  <div class="card-body">
-                    <img src="img/Dog.jpg" alt="Dog" />
-                    <h5 class="card-title">Woody</h5>
-                    <button class="btn card__btn btn--light">Learn More</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Add Arrows -->
-          <div
-            class="swiper-button-next slider-gallery__next"
-            tabindex="0"
-            role="button"
-            aria-label="Next slide"
-            aria-disabled="false"
-          ></div>
-          <div
-            class="swiper-button-prev slider-gallery__prev"
-            tabindex="0"
-            role="button"
-            aria-label="Previous slide"
-            aria-disabled="false"
-          ></div>
-          <button class="btn animals__btn btn--primary">
-            Get to know the rest
-          </button>
+    </div>
+  </section>
+  <sectiom class="about" id="about">
+    <div class="container">
+      <div class="pets">
+        <img src="img/Pets.jpg" alt="Pets" />
+        <div class="house">
+          <h3 class="house__title">About the shelter “Cozy House”</h3>
+          <span class="house__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+            efficitur blandit condimentum. Proin accumsan lorem vel gravida
+            fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.<br />
+            <br />
+            Donec consectetur, diam in porta tempus, urna ligula vestibulum
+            nibh, ac ornare felis justo nec leo. Praesent mattis nibh quis
+            ultrices pharetra. Morbi tempus at ante sit amet tristique.
+            Maecenas dignissim justo orci, in laoreet urna dapibus nec.
+            Praesent quis tortor faucibus, tristique ante vitae, dignissim
+            lorem. Sed at ligula et sem mattis gravida ac vel erat.
+          </span>
         </div>
       </div>
-    </section>
-    <section class="help" id="help">
-      <div class="container3">
-        <div class="helps">
-          <div class="helps__title">Than you can help our shelter</div>
-          <div class="img">
-            <div class="helps__image">
-              <img src="img/cat-food.png" alt="cat-food" />
-              <span class="helps__text">Pet food</span>
+    </div>
+  </sectiom>
+  <section class="animal" id="animal">
+    <div class="container2">
+      <div class="animals">
+        <div class="animals__title">
+          Our friends who<br />
+          are looking for a house
+        </div>
+        <!-- Swiper -->
+        <div class="swiper-container slider-gallery">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/Cat.jpg" alt="Cat" />
+                  <h5 class="card-title">Katrine</h5>
+                  <button class="btn card__btn btn--light">Learn More</button>
+                </div>
+              </div>
             </div>
-            <div class="helps__image">
-              <img src="img/ambulance.png" alt="ambulance" />
-              <span class="helps__text">Transportation</span>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/Dog2.jpg" alt="Dog" />
+                  <h5 class="card-title">Jennifer</h5>
+                  <button class="btn card__btn btn--light">Learn More</button>
+                </div>
+              </div>
             </div>
-            <div class="helps__image">
-              <img src="img/ball.png" alt="ball" />
-              <span class="helps__text">Toys</span>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/Dog.jpg" alt="Dog" />
+                  <h5 class="card-title">Woody</h5>
+                  <button class="btn card__btn btn--light">Learn More</button>
+                </div>
+              </div>
             </div>
-            <div class="helps__image">
-              <img src="img/bowl.png" alt="bowl" />
-              <span class="helps__text">Bowls and cups</span>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/Cat.jpg" alt="Cat" />
+                  <h5 class="card-title">Katrine</h5>
+                  <button class="btn card__btn btn--light">Learn More</button>
+                </div>
+              </div>
             </div>
-            <div class="helps__image">
-              <img src="img/shampoo.png" alt="Shampoos" />
-              <span class="helps__text">Shampoos</span>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/Dog2.jpg" alt="Dog" />
+                  <h5 class="card-title">Jennifer</h5>
+                  <button class="btn card__btn btn--light">Learn More</button>
+                </div>
+              </div>
             </div>
-            <div class="helps__image">
-              <img src="img/pills.png" alt="pills" />
-              <span class="helps__text">Vitamins</span>
-            </div>
-            <div class="helps__image">
-              <img src="img/syringe.png" alt="syringe" />
-              <span class="helps__text">Medicines</span>
-            </div>
-            <div class="helps__image">
-              <img src="img/leash.png" alt="leash" />
-              <span class="helps__text">Collars / leashes</span>
-            </div>
-            <div class="helps__image">
-              <img src="img/cat.png" alt="cat" />
-              <span class="helps__text">Sleeping area</span>
+            <div class="swiper-slide">
+              <div class="card">
+                <div class="card-body">
+                  <img src="img/Dog.jpg" alt="Dog" />
+                  <h5 class="card-title">Woody</h5>
+                  <button class="btn card__btn btn--light">Learn More</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next slider-gallery__next" tabindex="0" role="button" aria-label="Next slide"
+          aria-disabled="false"></div>
+        <div class="swiper-button-prev slider-gallery__prev" tabindex="0" role="button" aria-label="Previous slide"
+          aria-disabled="false"></div>
+        <button class="btn animals__btn btn--primary">
+          Get to know the rest
+        </button>
       </div>
-    </section>
-    <section class="donation">
-      <div class="container4">
-        <div class="donations">
-          <img src="img/DogDonat.png" alt="dog" class="donations__image" />
-          <div class="info">
-            <div class="info__title">
-              In addition, you<br />
-              can make a donation
-            </div>
-            <div class="info__card">
-              Name of the bank / Type of bank account
-            </div>
-            <div class="info__number">
-              <img src="img/credcard.png" alt="numbercard" />
-              <span class="info__number-code">8380 2880 8028 8791 7435</span>
-            </div>
-            <div class="info__text">
-              Legal information and lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
-              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
-              et malesuada fames ac ante ipsum primis in faucibus.
-            </div>
+    </div>
+  </section>
+  <section class="help" id="help">
+    <div class="container3">
+      <div class="helps">
+        <div class="helps__title">Than you can help our shelter</div>
+        <div class="img">
+          <div class="helps__image">
+            <img src="img/cat-food.png" alt="cat-food" />
+            <span class="helps__text">Pet food</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/ambulance.png" alt="ambulance" />
+            <span class="helps__text">Transportation</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/ball.png" alt="ball" />
+            <span class="helps__text">Toys</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/bowl.png" alt="bowl" />
+            <span class="helps__text">Bowls and cups</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/shampoo.png" alt="Shampoos" />
+            <span class="helps__text">Shampoos</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/pills.png" alt="pills" />
+            <span class="helps__text">Vitamins</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/syringe.png" alt="syringe" />
+            <span class="helps__text">Medicines</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/leash.png" alt="leash" />
+            <span class="helps__text">Collars / leashes</span>
+          </div>
+          <div class="helps__image">
+            <img src="img/cat.png" alt="cat" />
+            <span class="helps__text">Sleeping area</span>
           </div>
         </div>
       </div>
-    </section>
-    <section class="footer" id="footer">
-      <div class="container">
-        <div class="footers">
-          <div class="contact">
-            <div class="contact__title">
-              For questions and suggestions
-            </div>
-            <div class="contact__email">
-              <img src="img/email.png" alt="email" />
-              email@shelter.com
-            </div>
-            <div class="contact__phone">
-              <img src="img/telephone.png" alt="telephone" />
-              +13 674 567 75 54
-            </div>
+    </div>
+  </section>
+  <section class="donation">
+    <div class="container4">
+      <div class="donations">
+        <img src="img/DogDonat.png" alt="dog" class="donations__image" />
+        <div class="info">
+          <div class="info__title">
+            In addition, you<br />
+            can make a donation
           </div>
-          <div class="address">
-            <div class="address__title">
-              We are waiting for your visit
-            </div>
-            <div class="address__street1">
-              <img src="img/pin.png" alt="pin" />
-              Boston, Central Street, 1st (Entrance from the store)
-            </div>
-            <div class="address__street2">
-              <img src="img/pin.png" alt="pin" />
-              London, South Park, 18st
-            </div>
+          <div class="info__card">
+            Name of the bank / Type of bank account
           </div>
-          <img src="img/Dog5.png" alt="dog" />
+          <div class="info__number">
+            <img src="img/credcard.png" alt="numbercard" />
+            <span class="info__number-code">8380 2880 8028 8791 7435</span>
+          </div>
+          <div class="info__text">
+            Legal information and lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+            ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+            et malesuada fames ac ante ipsum primis in faucibus.
+          </div>
         </div>
       </div>
-    </section>
-    <p id="button-up">
-      <img data-src="img/angle-double-up-solid.svg " src="a" alt="Наверх" />
-      UP
-    </p>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
-    <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
-    <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
-    <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/buttonUp.min.js"></script>
-  </body>
+    </div>
+  </section>
+  <section class="footer" id="footer">
+    <div class="container">
+      <div class="footers">
+        <div class="contact">
+          <div class="contact__title">
+            For questions and suggestions
+          </div>
+          <div class="contact__email">
+            <a href="mailto:email@shelter.com" class="contact__email-email"><img src="img/email.png"
+                alt="email" />email@shelter.com</a>
+          </div>
+          <div class="contact__phone">
+            <a href="tel:+13 674 567 75 54" class="contact__phone-phone"><img src="img/telephone.png" alt="telephone" />
+              +13 674 567 75 54</a>
+          </div>
+        </div>
+        <div class="address">
+          <div class="address__title">
+            We are waiting for your visit
+          </div>
+          <div class="address__street1">
+            <img src="img/pin.png" alt="pin" />
+            Boston, Central Street, 1st (Entrance from the store)
+          </div>
+          <div class="address__street2">
+            <img src="img/pin.png" alt="pin" />
+            London, South Park, 18st
+          </div>
+        </div>
+        <img src="img/Dog5.png" alt="dog" />
+      </div>
+    </div>
+  </section>
+  <!-- Модальне окно -->
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <div class=" modal__card">
+        <img src="img/Dog23.jpg" alt="Dog" class="modal__card-images">
+        <div class="modal__info">
+          <div class="modal__info__name">Jennifer<br>
+            Pooch + Labrador</div>
+          <div class="modal__info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur
+            blandit
+            condimentum. Proin accumsan lorem vel gra vida fringilla. Suspendisse potenti. Mauris ut pulvinar nunc.
+            Donec consectetur, diam in porta tempus, urna ligula ves tibulum nibh.</div>
+          <ul class="modal__info__type">
+            <li><span>Age: 2 months</span> </li>
+            <li><span>Inoculations: none</span></li>
+            <li><span>Diseases: none</span></li>
+            <li><span>Parasites: none</span></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <p id="button-up">
+    <img data-src="img/angle-double-up-solid.svg " src="a" alt="Наверх" />
+    UP
+  </p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.validate.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/jquery.mask.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/wow.min.js"></script>
+  <script src="https://5e7c8b12452c471f8d34e456--reverent-yonath-cad9c2.netlify.com/js/buttonUp.min.js"></script>
+</body>
+
 </html>

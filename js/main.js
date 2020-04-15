@@ -99,10 +99,20 @@ $(document).ready(function () {
       320: {
         slidesPerView: 1,
         slidesPerGroup: 1,
-      }
-    }
+      },
+    },
   });
 
+  //сдайдерOur
+  var swiper = new Swiper('.slider-gallery2', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+    },
+  });
   //валидация форм
   $(".price__form").validate({
     errorClass: "invalid",
@@ -222,8 +232,13 @@ $(document).ready(function () {
     img.removeAttribute("data-src");
   };
 });
+
+//открытие и закртиые бургер меню
 $(document).ready(function () {
-  $('.burger').click(function (event) {
-    $('.burger, .nav').toggleClass('active');
-  })
-})
+  $(".burger").click(function (event) {
+    $(".burger, .nav").toggleClass("active");
+  });
+  $(".nav").click(function (event) {
+    $(".burger, .nav").removeClass("active");
+  });
+});
