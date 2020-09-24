@@ -19,8 +19,8 @@ try {
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.mail.ru';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'n2v@list.ru';                     // SMTP username
-    $mail->Password   = 'VadimNekrasov51046';                               // SMTP password
+    $mail->Username   = '';                     // SMTP username
+    $mail->Password   = ' ';                               // SMTP password
     $mail->SMTPSecure = 'ssl';         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
     $mail->Port       = 465;                                    // TCP port to connect to
     $mail->CharSet = "UTF-8";
